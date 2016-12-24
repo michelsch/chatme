@@ -1,0 +1,117 @@
+/* Color palette */
+:root {
+  --bright-sky-blue: #00c3ff;
+  --yellowy-green: #bdea3f;
+  --bright-orange: #ff6a00;
+  --cerise: #ee0979;
+  --dark-indigo: #0a0d2e;
+  --greyish-brown: #4a4a4a;
+}
+
+body {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.logoDiv {
+  margin-left:20%;
+}
+
+.logo {
+    width: 165px;
+    height: 165px;
+    display: block;
+    margin: auto;
+}
+
+.logoTitle {
+  font-family: LiGothicMed;
+  font-size: 72px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #0a0d2e;
+  color: var(--dark-indigo);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.usernameInput {
+  border-radius:100px;
+  width: 279px;
+  height: 54px;
+  border:0px;
+  background-image:url("assets/usernameInputBackground.png");
+  text-align:center;
+  margin-top:40px;
+}
+
+h1 {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #0a0d2e;
+  color: var(--dark-indigo);
+  text-align:left;
+}
+
+h2 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.56;
+}
+
+#nicknameText {
+  color: #0a0d2e;
+  color: var(--dark-indigo);
+}
+
+a, a:active, a:hover {
+  color:#ffffff;
+  text-decoration:none;
+}
+
+#continueText {
+  width: 275px;
+  height: 50px;
+  border-radius: 100px;
+  background: linear-gradient(to left, #ff6a00, #ee0979), linear-gradient(to left, #bdea3f, #00c3ff);
+  background: linear-gradient(to left, var(--bright-orange), var(--cerise)), linear-gradient(to left, var(--yellowy-green), var(--bright-sky-blue));
+  color:#ffffff;
+  text-align:center;
+  text-decoration:none;
+  line-height: 50px;
+}
+
+/* iPads (portait) and tablets */
+@media only screen and (max-width : 768px) {
+  .logoDiv {
+    margin:0;
+  }
+
+  h1, #continueText {
+    margin:auto;
+    text-align:center;
+  }
+
+  .usernameInput {
+    margin-top:30px;
+  }
+
+  form {
+    margin:auto;
+    text-align:center;
+  }
+
+}
