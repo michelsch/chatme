@@ -9,10 +9,14 @@
 }
 
 body {
-  display: table;
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+#loginRow {
+  margin-top:50vh;
+  transform:translate(0,-50%);
 }
 
 .logoDiv {
@@ -20,10 +24,10 @@ body {
 }
 
 .logo {
-    width: 165px;
-    height: 165px;
-    display: block;
-    margin: auto;
+  width: 165px;
+  height: 165px;
+  display: block;
+  margin: auto;
 }
 
 .logoTitle {

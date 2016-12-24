@@ -18,25 +18,11 @@
   <title>chat.me</title>
 </head>
 <body>
-  <div class="container" style="display: table-cell;vertical-align: middle";>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="logoDiv">
-          <img class="logo" src="assets/logo.png">
-          <div class="logoTitle"> chat.me </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-          <h1> Set your nickname. </h1>
-          <form>
-              <h2>
-              <input class="usernameInput" type="text" name="nickname"><br>
-              </h2>
-          </form>
-          <a href="chat.html">
-            <h2 id="continueText">Continue</h2>
-        </a>
-    </div>
-  </div>
+  <div id="app"></div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+  <script src="bundle.js"></script>
 </body>
 </html>
