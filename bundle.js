@@ -20563,7 +20563,7 @@ var ChatApp = function (_React$Component) {
         // set the initial state of messages and users
         var _this = _possibleConstructorReturn(this, (ChatApp.__proto__ || Object.getPrototypeOf(ChatApp)).call(this, props));
 
-        _this.state = { messages: [], numUsers: 1, isTyping: false };
+        _this.state = { messages: [], numUsers: socket.numUsers, isTyping: false };
         _this.sendHandler = _this.sendHandler.bind(_this);
         _this.isTyping = _this.isTyping.bind(_this);
         _this.isNotTyping = _this.isNotTyping.bind(_this);
@@ -20603,7 +20603,7 @@ var ChatApp = function (_React$Component) {
                     ' user(s) online'
                 ),
                 _react2.default.createElement(_Messages2.default, { messages: this.state.messages }),
-                _react2.default.createElement('img', { src: 'assets/typingicon.png', className: this.state.isTyping ? '' : 'hidden' }),
+                _react2.default.createElement('img', { src: 'assets/typingicon.png', id: 'typingIcon', className: this.state.isTyping ? '' : 'hidden' }),
                 _react2.default.createElement('div', { className: 'line' }),
                 _react2.default.createElement(_ChatInput2.default, { onSend: this.sendHandler,
                     isTyping: this.isTyping,
@@ -20909,7 +20909,7 @@ var Message = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'username' },
-                    this.props.username
+                    this.props.fromMe ? '' : this.props.username
                 ),
                 _react2.default.createElement(
                     'div',

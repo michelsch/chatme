@@ -10,7 +10,7 @@ class Message extends React.Component {
         return (
             <div className={`message ${fromWhoClass}`}>
                 <div className='username'>
-                    { this.props.username }
+                    { this.props.fromMe ? '':this.props.username }
                 </div>
                 <div className='messageBody'>
                     { this.props.message }

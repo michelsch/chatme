@@ -137,6 +137,9 @@ a, a:active, a:hover {
   float:left;
   clear: both;
   display: table;
+  margin:10px;
+  margin-left:20px;
+  margin-right:20px;
 }
 
 .message .messageBody {
@@ -173,6 +176,12 @@ a, a:active, a:hover {
   font-stretch: normal;
   color: #0a0d2e;
   color: var(--dark-indigo);
+}
+
+#typingIcon {
+  width: 48px;
+  height: 24px;
+  margin:10px;
 }
 
 #chatInputForm {

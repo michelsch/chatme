@@ -7,7 +7,7 @@ class ChatApp extends React.Component {
     constructor(props) {
         super(props);
         // set the initial state of messages and users
-        this.state = {messages: [], numUsers:1, isTyping:false};
+        this.state = {messages: [], numUsers:socket.numUsers, isTyping:false};
         this.sendHandler = this.sendHandler.bind(this);
         this.isTyping = this.isTyping.bind(this);
         this.isNotTyping = this.isNotTyping.bind(this);
@@ -38,7 +38,7 @@ class ChatApp extends React.Component {
             <div>
                 <div className="usersOnline">{this.state.numUsers} user(s) online</div>
                 <Messages messages={this.state.messages}/>
-                <img src="assets/typingicon.png" className={this.state.isTyping ? '':'hidden'}/>
+                <img src="assets/typingicon.png" id="typingIcon" className={this.state.isTyping ? '':'hidden'}/>
                 <div className="line"></div>
                 <ChatInput onSend={this.sendHandler}
                            isTyping={this.isTyping}
