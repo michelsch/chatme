@@ -20598,9 +20598,9 @@ var ChatApp = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'usersOnline' },
+                    { className: 'usersOnline' },
                     this.state.numUsers,
-                    ' users online'
+                    ' user(s) online'
                 ),
                 _react2.default.createElement(_Messages2.default, { messages: this.state.messages }),
                 _react2.default.createElement('img', { src: 'assets/typingicon.png', className: this.state.isTyping ? '' : 'hidden' }),
@@ -20705,6 +20705,7 @@ var ChatInput = function (_React$Component) {
                     _react2.default.createElement(_reactInputBoxDoneTyping2.default, {
                         id: 'chatInputBox',
                         type: 'text',
+                        required: true,
                         value: this.state.chatInput,
                         onChange: function onChange(value) {
                             //console.log('onChange:', value);

@@ -19,6 +19,7 @@ class ChatInput extends React.Component {
                     <InputBoxDoneTyping
                         id="chatInputBox"
                         type="text"
+                        required
                         value={this.state.chatInput}
                         onChange={(value) => {
                             //console.log('onChange:', value);

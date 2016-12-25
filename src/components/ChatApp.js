@@ -36,7 +36,7 @@ class ChatApp extends React.Component {
     render() {
         return (
             <div>
-                <div class="usersOnline">{this.state.numUsers} users online</div>
+                <div className="usersOnline">{this.state.numUsers} user(s) online</div>
                 <Messages messages={this.state.messages}/>
                 <img src="assets/typingicon.png" className={this.state.isTyping ? '':'hidden'}/>
                 <div className="line"></div>
