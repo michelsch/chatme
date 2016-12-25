@@ -7,7 +7,7 @@ class ChatApp extends React.Component {
     constructor(props) {
         super(props);
         // set the initial state of messages and users
-        this.state = {messages: [], numUsers:socket.numUsers, isTyping:false};
+        this.state = {messages: [], numUsers:1, isTyping:false};
         this.sendHandler = this.sendHandler.bind(this);
         this.isTyping = this.isTyping.bind(this);
         this.isNotTyping = this.isNotTyping.bind(this);
